@@ -1,11 +1,16 @@
 import React from 'react';
 import './App.css';
-import Navbar from './components/Navbar/Navbar'
+import { Buttons } from './components/Button/Button'
+import { Appbar } from './components/Appbar/Appbar'
 
-function App() {
+
+const App: React.FC = () => {
   return (
-    <Navbar />
-  );
+    <div>
+      <Appbar />
+      <Buttons variant='Primary' />
+    </div>
+  )
 }
 
 export default App;
