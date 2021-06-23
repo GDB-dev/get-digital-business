@@ -23,4 +23,3 @@ workflows:
             - aws-s3/copy:
                 from: dist/
                 to: s3://test.getdigitalbusiness.co.uk
-                arguments: --recursive
