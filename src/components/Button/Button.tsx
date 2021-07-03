@@ -5,11 +5,12 @@ import * as React from 'react';
 
 interface Props {
   variant: string;
+  style: string;
 }
 
-export const Buttons: React.FC<Props> = () => {
+export const Buttons: React.FC<Props> = ({variant}:Props) => {
   return (
-    <Button>tests sets</Button>
+    <Button color='primary'> {variant} </Button>
   )
 }
 
