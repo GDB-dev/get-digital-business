@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {ReactElement} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -17,7 +17,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function MediaCard() {
+export default function MediaCard(): ReactElement {
   const classes = useStyles();
 
   return (
@@ -47,29 +47,3 @@ export default function MediaCard() {
 }
 
 
-
-/* import { Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedia } from '@material-ui/core';
-import React, { ReactElement } from 'react'
-
-
-
-
-export default function Cards(): ReactElement {
-    return (
-        <div>
-            <Card>
-                <CardHeader>Card Header</CardHeader>
-                <CardMedia></CardMedia>
-                    <CardActionArea>
-                    
-                    <CardContent>HELLO</CardContent>
-                    <CardActions>Action 1</CardActions>
-                    <CardActions>Action 2</CardActions>
-                </CardActionArea>
-            </Card>
-        </div>
-
-    
-    )
-}
-*/
